@@ -1,7 +1,7 @@
 import { pool } from './db.js'
 
 export async function migrate() {
-	console.log('⏳ Проверка структуры БД...')
+	console.log('Проверка структуры БД...')
 
 	// Создаем таблицу events, если нет
 	await pool.query(`
